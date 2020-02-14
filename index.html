@@ -107,6 +107,7 @@
 
       <!-- Home -->
       <div id="home" class="collapse show">
+        <!-- Home Header -->
         <div class="card card-body bg-primary text-white py-5">
           <h2>Welcome to my page</h2>
           <p class="lead">
@@ -147,7 +148,7 @@
             <div class="progress-bar bg-warning" style="width:60%"></div>
           </div>
 
-          <!-- Python -->
+          <!-- Python Progress Bar-->
           <h4>Python</h4>
           <div class="progress mb-3">
             <div class="progress-bar bg-success" style="width:75%"></div>
@@ -155,6 +156,17 @@
         </div>
       </div>
 
+      <!-- Resume Section -->
+      <div id="resume" class="collapse">
+        <!-- Resume Header -->
+        <div class="card card-body bg-success text-white py-5">
+          <h2>MY Resume</h2>
+          <p class="lead">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem,
+            provident?
+          </p>
+        </div>
+      </div>
       <!-- Footer -->
       <footer id="main-footer" class="p-5 bg-dark text-white">
         <div class="row">
@@ -192,6 +204,11 @@
     <script>
       //Get the current year for the copyright at the bottom of the page
       $("#year").text(new Date().getFullYear());
+
+      // Collapse Each Section
+      $(".port-item").click(function() {
+        $(".collapse").collapse("hide");
+      });
     </script>
   </body>
 </html>
